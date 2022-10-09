@@ -1,0 +1,206 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 10%;
+    left: 4%;
+    .search-form{
+        width: 15%;
+        display: flex;
+        background-color: #ffff;
+        border-radius: 9px;
+        -webkit-border-radius: 9px;
+        -moz-border-radius: 9px;
+        -ms-border-radius: 9px;
+        -o-border-radius: 9px;
+        svg{
+            font-size: 2vw;
+            margin: 4%;
+            color: #cbcfd1;
+        }
+        .search-inp{
+            width: 90%;
+            font-size: .9vw;
+            font-weight: 400;
+            padding: 5% 5% 5% 0%;
+            border: none;
+            outline: none;
+            border-radius: 9px;
+            -webkit-border-radius: 9px;
+            -moz-border-radius: 9px;
+            -ms-border-radius: 9px;
+            -o-border-radius: 9px;
+            color: #cbcfd1;
+            
+        }
+        ::placeholder{
+            font-size: .9vw;
+            color: #cbcfd1;
+            font-weight: 400;
+        }
+    }
+}
+.info-container{
+    width: 70%;
+    height: 100%;
+    padding-top: 9%;
+    background-color: #def7ff;
+    h2{
+        font-size: 3.5vw;
+        font-weight: 300;
+        width: 80%;
+        margin-left: 5.5%;
+        margin-top: 4%;
+        color: #121643;
+    }
+    .buttons{
+        width: 15%;
+        display: flex;
+        margin-top: 10%;
+        margin-left: 4.5%;
+        button{
+            width: 50%;
+            background: none;
+            border: none;
+            outline: none;
+            font-size: 1vw;
+            font-weight: 400;
+            color: #c5cdda;
+        }
+        .btn.active{
+            text-decoration: underline;
+            color: #121643
+        }
+    }
+    .todays-forcast.active, .days-forcast.active{
+        width: 84%;
+        max-height: 40%;
+        margin-left: 5%;
+        margin-top: 2%;
+        padding-right: 1%;
+        display: inline-block;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        
+        .desc-headings{
+            width: 100%;
+            ul{
+                width: 100%;
+                list-style-type: none;
+                display: flex;
+                justify-content: space-between; 
+                li{
+                    color: #121643;
+                    text-align: center;
+                    font-weight: 500;
+                }
+            }
+        }
+        tr{  
+            .colored{
+                color: #121643;
+                border-bottom: 1px solid #121643;
+                padding-left: 3.5%;
+            }
+            td:first-of-type{
+                color: #121643;
+                font-weight: 300;
+            }
+        }
+        td{
+            width: 18%;
+            font-size: 1vw;
+            font-weight: 400;
+            color: #c5cdda;
+            padding-left: 2%;
+            padding-bottom: 1%;
+            svg{
+                font-size: 1.5vw;
+                color: blueviolet;
+                margin-bottom: -5%;
+            }
+        }
+        .wind{
+            font-size: 1.2vw;
+            margin-left: 24%;
+            margin-bottom: -5%;
+        }
+        img{
+            width: 29%;
+        }
+    }
+    .todays-forcast, .days-forcast{
+        display: none;
+    }
+    .todays-forcast.active::-webkit-scrollbar, .days-forcast.active::-webkit-scrollbar {
+        width: 5px; 
+    }   
+    ::-webkit-scrollbar-track {
+        background: #f7f7f7; 
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #1216439e; 
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #121643; 
+    }
+}        
+.current-container-backgrounds{
+    width: 30%;   
+    height: 100%;
+    background: url(http://localhost:3000/images/nightClear.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    .current-container{
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        section{
+            padding-top: 45%;
+            text-align: center;
+            h4 {
+                font-size: 2vw;
+                font-weight: 400;
+                color: #ffff;
+                img{
+                    width: 9%;
+                    margin-bottom: -2.5%;
+                }
+            }
+            span {
+                font-size: .8vw;
+                margin-top: 2% ;
+                color: #cbcfd1;
+            }
+            h2 {
+                font-size: 6vw;
+                font-weight: 400;
+                margin: 9% 0 9% 0;
+                color: #ffff;
+                span{
+                    font-size: 3vw; 
+                    font-weight: 400;
+                }
+            }
+            p{
+                font-size: .8vw;
+                color: #cbcfd1;
+                margin-top: 4%;
+            }
+        }
+    }
+}                                      

@@ -1,0 +1,78 @@
+@media screen and (max-width: 1681px){
+    .info-container h2 {
+        margin-top: 6%;
+    }
+    .info-container .buttons button {
+        font-size: 1.2vw;
+    }
+    .info-container .todays-forcast.active td, .info-container .days-forcast.active td {
+        font-size: 1.2vw;
+    }
+    .current-container-backgrounds .current-container section {
+        padding-top: 52%;
+    }
+    .current-container-backgrounds .current-container section span {
+        font-size: 0.9vw;
+    }
+    .current-container-backgrounds .current-container section h2 {
+        font-size: 6.4vw;
+    }
+    .current-container-backgrounds .current-container section h4 {
+        font-size: 2.2vw;
+    }
+    header .search-form .search-inp {
+        font-size: 1vw;
+    }
+}
+@media screen and (max-width: 1537px){
+    .info-container .todays-forcast.active, .info-container .days-forcast.active {
+        width: 85%;
+    }
+    .info-container .buttons {
+        margin-left: 3.6%;
+    }
+    .info-container .todays-forcast.active td, .info-container .days-forcast.active td {
+        width: 18%;
+        padding-left: 0%;
+        padding-bottom: 1%;
+        padding-right: 5%;
+    }
+    .info-container .todays-forcast.active tr .colored, .info-container .days-forcast.active tr .colored {
+        padding-left: 3%;
+        padding-right: 0;
+    }
+}
+@media screen and (max-width: 1441px){
+    .info-container .todays-forcast.active td, .info-container .days-forcast.active td {
+        width: 16%;
+        padding-left: 0%;
+        padding-bottom: 1%;
+        padding-right: 5%;
+    }
+    .info-container .todays-forcast.active tr .colored, .info-container .days-forcast.active tr .colored {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+    header .search-form .search-inp {
+        font-size: 1.1vw;
+    }
+    header .search-form .search-inp::placeholder {
+        font-size: 1.1vw;
+    }
+    .info-container .todays-forcast.active .wind, .info-container .days-forcast.active .wind {
+        margin-bottom: -2%;
+    }
+}
+@media screen and (max-width: 1367px){
+    .info-container .todays-forcast.active td, .info-container .days-forcast.active td {
+        width: 18%;
+        padding-left: 0%;
+        padding-bottom: 1.5%;
+        padding-right: 5%;
+        font-size: 1.25vw;
+    }
+    .info-container .todays-forcast.active img, .info-container .days-forcast.active img {
+        width: 35%;
+    }
+}
